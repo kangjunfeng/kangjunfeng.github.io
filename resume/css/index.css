@@ -1,0 +1,426 @@
+/*header--*/
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(201, 197, 197, 0.28);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
+.header .header_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    box-shadow:0,0,28, aqua;
+    border-color:aqua;
+    float: left;
+}
+
+.header_img:hover{
+    -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+    border-color: aqua;
+    -webkit-box-shadow:0 0 18px aqua;
+    background-color: ;
+}
+
+.header_txt{
+    width: 100px;
+    height: 50px;
+    float: left;
+    position: relative;
+    left:50px;
+    top:3px;
+    text-align: center;
+}
+
+.header_txt_word{
+    width: 100px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.header_nav{
+    width: 250px;
+    height:60px;
+    position: relative;
+    right: 50px;
+    top: 0;
+    float: right;
+}
+
+#menu li{
+    list-style: none;
+    padding-bottom: 3px;
+    margin: 0;
+    float: left;
+    text-align: center;
+    width: 50px;
+    border-bottom: 3px,solid,#1FAEFF;
+    display: inline-block;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-bottom: 3px,solid,#1FAEFF;
+
+}
+
+#menu li a:hover{
+    color: #1FAEFF;
+}
+/*header end --*/
+
+
+/*--fullpage--*/
+#fullpage{
+    z-index: 1;
+}
+.section{
+    text-align:center;
+    background: url("../source/bg.jpg");
+    background-size: cover;
+}
+
+/*first page*--*/
+.intro p{
+    color: #000000;
+}
+
+.intro_img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    animation: imgToCenter 3s;
+    -webkit-animation: imgToCenter 3s;
+    -moz-animation:imgToCenter 3s;
+    -o-animation:imgToCenter 3s;
+}
+
+@keyframes imgToCenter {
+    0%   {bottom: 400px;}
+    25%  {bottom: 300px;}
+    50%  {bottom: 200px;}
+    75%  {bottom: 100px}
+    100% {bottom: 0;}
+}
+
+@-webkit-keyframes imgToCenter {
+    0%   {bottom: 400px;}
+    25%  {bottom: 300px;}
+    50%  {bottom: 200px;}
+    75%  {bottom: 100px}
+    100% {bottom: 0;}
+}
+
+@-moz-keyframes imgToCenter {
+    0%   {bottom: 400px;}
+    25%  {bottom: 300px;}
+    50%  {bottom: 200px;}
+    75%  {bottom: 100px}
+    100% {bottom: 0;}
+}
+
+@-ms-keyframes imgToCenter {
+    0%   {bottom: 400px;}
+    25%  {bottom: 300px;}
+    50%  {bottom: 200px;}
+    75%  {bottom: 100px}
+    100% {bottom: 0;}
+}
+
+.intro_img:hover{
+    -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+    border-color: aqua;
+    -webkit-box-shadow:0 0 18px aqua;
+
+}
+
+/*second page--*/
+.allpage{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 80px;
+    left: 0;
+    float: left;
+}
+.title h1{
+    font-size: 28px;
+    font-family: Arial,Helvetica;
+    color: #1FAEFF;
+    margin: 0;
+}
+hr{
+    background-color: red;
+}
+
+.about_list_content{
+    width: 60%;
+    height: 30%;
+    float: left;
+    background-color: lightgray;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    border-radius: 20px;
+}
+
+.about_list_box{
+    float: left;
+    width:25%;
+    height:100%;
+    position: relative;
+}
+
+.about_list_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: auto;
+    background-color: lightgray;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    position: relative;
+    top: 10px;
+}
+
+.about_list_img:hover{
+    border-color: #000000;
+    border-width: 5px;
+}
+
+.about_list_img img{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    top:10px;
+}
+
+.about_list_word{
+    /*border-top:60px  solid;!*上边框宽度等于表格第一行行高*!*/
+    /*width:10px;!*让容器宽度为0*!*/
+    /*height:10px;!*让容器高度为0*!*/
+    /*border-right:80px #bbb5ff solid;!*右边框宽度等于表格第一行第一格宽度*!*/
+    /*position:relative;!*让里面的两个子容器绝对定位*!*/
+    /*margin: auto;*/
+    /*top: 30px;*/
+    width:80px;
+    height:60px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    border-width: 1px;
+    border-color: #76B41C;
+
+}
+
+b{
+    font-style:normal;
+    font-size: 14px;
+    font-family:Arial,Helvetica;
+    display:block;
+    position:absolute;
+    top:5px;
+    left:0px;
+    width:35px;
+}
+em{
+    font-style:normal;
+    font-size: 14px;
+    font-family:Arial,Helvetica;
+    display:block;
+    position:absolute;
+    bottom: 0px;
+    right: -10px;
+    width:35x;
+}
+
+.about_list_hr{
+    width:100px;
+    height: 1px;
+    background-color: #292929;
+    position: relative;
+    top:30px;
+    left:0px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -moz-animation: rotate(-30deg);
+
+}
+.about_info{
+    width: 70%;
+    height: 35%;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+
+.about p{
+    font-family:Arial,HeadLineA;
+    font-size: 16px;
+}
+
+
+
+/*--third page--*/
+.skill_p{
+    position:absolute;
+    top:25%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+.skill_p p{
+    font-size: 13px;
+}
+
+.skill_show{
+    position: absolute;
+    top: 25%;
+    left:15%;
+    width: 70%;
+    height:65%;
+}
+.skill_box{
+    float: left;
+    width:25%;
+    height:100%;
+}
+
+.skill_icon{
+    width:100%;
+    height: 25%;
+    position: relative;
+}
+
+.skill_icon_img:hover{
+    width: 100px;
+    height: 110px;
+}
+
+.skill_icon_img{
+    position: relative;
+    top:5px;
+    left: 0;
+    width: 80px;
+    height: 90px;
+}
+
+.skill_category{
+    width: 100%;
+    height: 3%;
+}
+
+.skill_arrow{
+    width: 100%;
+    height:30px;
+    position: relative;
+    top: 30px;
+    left: 0;
+    webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.skill_arrow_img{
+    width: 30px;
+    height: 30px;
+}
+
+.skill_explain{
+    width: 150%;
+    height: 20%;
+    background-color: #7f7fff;
+    position: relative;
+    top: 60px;
+    left: -25%;
+    display: none;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.skill_explain li{
+    font-size: 12px;
+    text-align: left;
+
+}
+
+/*--fourth page--*/
+
+.experience_content{
+    width: 70%;
+    height:40%;
+    position:absolute;
+    top: 40%;
+    left: 15%;
+    float: left;
+}
+
+.experience_left{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.experience_main{
+    width: 80%;
+    height: 100%;
+    float: left;
+    background: url("../source/expbg.jpg");
+    background-size: cover;
+}
+
+.experience_main dl{
+    text-align: left;
+    line-height: 35px;
+}
+
+.experience_main dt{
+    font-size: 24px;
+    text-indent: 38px;
+}
+.experience_main dd{
+    font-size: 16px;
+}
+
+.experience_main .exp_list_time{
+    font-size: 14px;
+    font-family: "American Typewriter";
+}
+
+
+
+.experience_right{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+/*--fifth page--*/
+.works_list{
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    background-color: #1FAEFF;
+}
